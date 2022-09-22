@@ -14,7 +14,19 @@ const Modal = ({ modalData, setModalData }) => {
                         ✕
                     </label>
                     <h3 className="text-lg font-bold">{modalData.name}</h3>
-                    <p className="py-4">You've been selected for a chance to get one year of subscription to use Wikipedia for free!</p>
+                    <figure><img src={modalData.img} alt="Guns" className='gunImg' /></figure>
+                    <div className="card-actions justify-start" style={{ fontSize: '1.5rem', marginTop: '0.7rem' }}>
+                        <span className='mr-5'>Category : <div className="badge badge-outline">{modalData.category}</div> </span>
+                        <span>Bollet: <div className="badge badge-outline">{modalData.bullet}</div></span>
+                    </div>
+                    <div className="card-actions justify-start" style={{ fontSize: '1.5rem', marginTop: '0.7rem' }}>
+                        <span className='mr-5'>Action : <div className="badge badge-outline">{modalData.action}</div> </span>
+                        <span>Capacity: <div className="badge badge-outline">{modalData.capacity}</div></span>
+                    </div>
+                    <div className="card-actions justify-start" style={{ fontSize: '1.5rem', marginTop: '0.7rem' }}>
+                        <span className='mr-5'>Price : <div className="badge badge-outline">{modalData.price}</div> </span>
+                        <span>Category: <div className="badge badge-outline">{modalData.category}</div></span>
+                    </div>
                 </div>
             </div>
         </section>
