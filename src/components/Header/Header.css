@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.logoImg {
+    width: 8rem;
+}
+
+.gunImg {
+    width: auto;
+    height: 18rem;
+}
